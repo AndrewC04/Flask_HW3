@@ -17,13 +17,10 @@ for word in file.read().lower().split():
 
 sort = sorted(dict, key = dict.get, reverse=True)[:5]
 
-print(" ")  
-
 for key in sort:  
     print(key, ":", dict[key])
 
 # Output: 
-# 
 # hello : 3
 # drive : 2
 # day : 2
