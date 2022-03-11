@@ -5,13 +5,11 @@
 # from user input using nested while loops
 
 def sort_list():
-    list = [1, 3, 2, 7]
-    n = 4
-
-    #n = int(input('Enter the number of elements in list: '))
-    #for i in range(1, n + 1):
-    #    num = int(input('Enter the element(s) in the number array: '))
-    #    list.append(num)
+    list = []
+    n = int(input('Enter the number of elements in list: '))
+    for i in range(1, n + 1):
+        num = int(input('Enter the element(s) in the number array: '))
+        list.append(num)
 
     i = 0
     while(i < n-1):
