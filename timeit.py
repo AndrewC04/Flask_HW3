@@ -17,10 +17,6 @@ def time_func():
     val = time.time()
     print("Total time:", val)
 
-time_func = calculate_time(time_func)
-
-time_func()
-
 # Output: 
 # Finding total time...
 # Total time: 1646896069.4594543
