@@ -6,7 +6,7 @@
 
 import time
 
-def calculator_time(func):
+def calculate_time(func):
     def wrapper():
         print("Finding total time...")
         func()
@@ -17,7 +17,7 @@ def time_func():
     val = time.time()
     print("Total time:", val)
 
-time_func = calculator_time(time_func)
+time_func = calculate_time(time_func)
 
 time_func()
 
