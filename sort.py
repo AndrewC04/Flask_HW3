@@ -4,10 +4,9 @@
 # Description: This program involves a sort function, sort_list, that returns a sorted list 
 # from user input using nested while loops
 
-list = []
-n = sum(list) / len(list)
-
 def sort_list(list):
+    list = []
+    n = sum(list) / len(list)
     #list = [1, 3, 2, 7]
     #n = 4
 
