@@ -1,5 +1,5 @@
 # Name: Andrew Chau
-# Date: 10 March 2022
+# Date: 20 March 2022
 # Course: CMPE 131
 # Description: This program reads an input to words of a document and prints out the the top 5
 # most frequent words sorted from most to least with no duplicates
@@ -17,12 +17,15 @@ for word in file.read().lower().split():
 
 sort = sorted(dict, key = dict.get, reverse=True)[:5]
 
-for key in sort:  
-    print(key, ":", dict[key])
+print(" ")
+
+for key in sort:
+    print(f'{key}: {dict[key]}')
 
 # Output: 
-# hello : 3
-# drive : 2
-# day : 2
-# morning : 2
-# good : 1
+#
+# hello: 3
+# drive: 2
+# day: 2
+# morning: 2
+# good: 1
