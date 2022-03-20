@@ -6,9 +6,7 @@
 
 def sort_list(list):
     list = []
-    n = sum(list) / len(list)
-    #list = [1, 3, 2, 7]
-    #n = 4
+    n = get_size(list)
 
     #n = int(input('Enter the number of elements in list: '))
     #for i in range(1, n + 1):
@@ -27,6 +25,15 @@ def sort_list(list):
         i+=1
 
     print(list)
+
+def get_size(n): 
+    n = sum(n) / len(n)
+    if n == 0:
+        return 0
+    elif n.isalpha():
+        return len(n)
+    return n
+
 # sort_list(list)
 
 # Input: 
