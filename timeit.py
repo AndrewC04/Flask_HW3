@@ -1,5 +1,5 @@
 # Name: Andrew Chau
-# Date: 10 March 2022
+# Date: 20 March 2022
 # Course: CMPE 131
 # Description: This program returns the exact number of seconds it takes to run the function, time_func, in 
 # the decorator, calculate_time, using time.time()
@@ -8,15 +8,20 @@ import time
 
 def calculate_time(func):
     def wrapper():
-        print("Finding total time...")
-        func()
+        start = time.time()
+        ans = func()
+        end = time.time()
+        val = end - start
+        print(f"Total time {val}")
+        return ans
     return wrapper
 
-
+@calculate_time
 def time_func():
-    val = time.time()
-    print("Total time:", val)
+    for i in range(10000000):
+        i * 3
+
+# time_func()
 
 # Output: 
-# Finding total time...
-# Total time: 1646896069.4594543
+# Total time 4.5731096267700195
