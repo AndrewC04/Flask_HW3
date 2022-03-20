@@ -1,10 +1,10 @@
 # Name: Andrew Chau
-# Date: 10 March 2022
+# Date: 20 March 2022
 # Course: CMPE 131
 # Description: This program involves a sort function, sort_list, that returns a sorted list 
 # from user input using nested while loops
 
-def sort_list():
+def sort_list(list):
     list = [1, 3, 2, 7]
     n = 4
 
@@ -25,7 +25,7 @@ def sort_list():
         i+=1
 
     print('List ordered is:', list)
-sort_list()
+# sort_list(list)
 
 # Input: 
 # Enter the number of elements in list: 4
