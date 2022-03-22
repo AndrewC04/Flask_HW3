@@ -1,5 +1,5 @@
 def sort_list(list):
-    list = []
+    list = [1, 3, 2, 7]
     n = len(list)
 
     #n = int(input('Enter the number of elements in list: '))
