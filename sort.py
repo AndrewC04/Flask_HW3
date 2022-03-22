@@ -17,9 +17,9 @@ def sort_list(list):
                 list[y+1] = temp
             y+=1
         i+=1
+    return list
 
-    print(list)
-
+print(list)
 sort_list(list)
 
 # Input: 
