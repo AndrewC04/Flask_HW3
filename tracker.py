@@ -17,9 +17,9 @@ def foo():
     x = 2**3-34
     return x
 
-foo = func_counter(foo)
-foo(10)
-foo(50)
+# foo = func_counter(foo)
+# foo(10)
+# foo(50)
 
 print("Counter:", foo.counter) # expect 2 as output
 
