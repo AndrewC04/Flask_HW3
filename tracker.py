@@ -5,16 +5,16 @@
 # the decorator function, func_counter, when the function foo is being decorated.
 
 def func_counter(func):
-    def wrapper(y):
+    def wrapper():
         wrapper.counter+=1
-        func(y)
+        func()
     wrapper.counter = 0
     return wrapper
 
 
 @func_counter
-def foo(y):
-    x = y+2**3-34
+def foo():
+    x = 2**3-34
     return x
 
 foo = func_counter(foo)
