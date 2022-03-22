@@ -4,7 +4,7 @@
 # Description: This program reads an input to words of a document and prints out the the top 5
 # most frequent words sorted from most to least with no duplicates
 
-# file = open("document.txt", "r")
+file = open("document.txt", "r")
 # document.txt contains: "hello hello Hello Drive good test Day day morning morning drive"
 
 dict = {}
