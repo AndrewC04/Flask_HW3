@@ -20,7 +20,7 @@ def sort_list(list):
 
     print(list)
 
-# sort_list(list)
+sort_list(list)
 
 # Input: 
 # Enter the number of elements in list: 4
