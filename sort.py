@@ -1,3 +1,9 @@
+# Name: Andrew Chau
+# Date: 20 March 2022
+# Course: CMPE 131
+# Description: This program involves a sort function, sort_list, that returns a sorted list 
+# from user input using nested while loops
+
 def sort_list(list):
     n = len(list)
 
@@ -19,8 +25,8 @@ def sort_list(list):
     return list
 
 list = [1, 3, 2, 7]
-print(list)
 sort_list(list)
+print(list)
 
 # Input: 
 # Enter the number of elements in list: 4
@@ -29,4 +35,4 @@ sort_list(list)
 # Enter the element(s) in the number array: 2
 # Enter the element(s) in the number array: 7
 # Output:
-# [1, 2, 3, 7] 
+# [1, 2, 3, 7]  
