@@ -13,7 +13,7 @@ def sort_list(list):
     #    list.append(num)
 
     i = 0
-    while(i < n-1):
+    while(i < n):
         y = 0
         while(y < n-i-1):
             if(list[y] > list[y+1]):
