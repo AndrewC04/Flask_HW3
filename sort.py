@@ -13,7 +13,7 @@ def sort_list(list):
     #    list.append(num)
 
     i = 0
-    while(i < n):
+    while(i < n-1):
         y = 0
         while(y < n-i-1):
             if(list[y] > list[y+1]):
@@ -24,10 +24,13 @@ def sort_list(list):
         i+=1
     return list
 
-list = [1, 3, 2, 7]
-sort_list(list)
-print(list)
+def main():
+    list = [1, 3, 2, 7]
+    sort_list(list)
+    print(list)
 
+main()
+    
 # Input: 
 # Enter the number of elements in list: 4
 # Enter the element(s) in the number array: 1
