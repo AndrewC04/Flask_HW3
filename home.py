@@ -15,12 +15,12 @@ def home():
             <h1> Welcome ''' + name['username'] + '''! </h1>
             <p> <a href="http://www.google.com/"> not google </a> </p>
             <ul>
-                <li>Paris</li>
-                <li>London</li>
-                <li>Rome</li>
-                <li>Tahiti</li>
+                {% for city in city_names %}
+                <li> {{ city }} </li>
+                {% endfor %}
             </ul>
         </body>
     </html> '''
 
-myapp_obj.run()
+if __name__ == "__main__":
+    myapp_obj.run(debug=True)
