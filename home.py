@@ -8,19 +8,19 @@ def home():
     name = {'username':'Lisa'}
     city_names = ['Paris','London','Rome','Tahiti']
 
-    return f'''
+    return '''
     <!DOCTYPE html>
     <html>
         <body>
-            <h1> Welcome {name["username"]}! </h1>
+            <h1> Welcome ''' + name['username'] + '''! </h1>
             <p> <a href="http://www.google.com/"> not google </a> </p>
             <ul>
-                {% for city in city_names %}
-                <li> {{ city }} </li>
-                {% endfor %}
+                <li>Paris</li>
+                <li>London</li>
+                <li>Rome</li>
+                <li>Tahiti</li>
             </ul>
         </body>
     </html> '''
 
 if __name__ == '__main__':
-    myapp_obj.run(debug=True)
