@@ -4,9 +4,10 @@ myapp_obj = Flask(__name__)
 
 @myapp_obj.route("/")
 
+name = {'username':'Lisa'}
+city_names = ['Paris','London','Rome','Tahiti']
+
 def home():
-    name = {'username':'Lisa'}
-    city_names = ['Paris','London','Rome','Tahiti']
 
     for city in range(len(city_names)):
         return '''
