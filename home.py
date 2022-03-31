@@ -8,7 +8,6 @@ name = {'username':'Lisa'}
 city_names = ['Paris','London','Rome','Tahiti']
 
 def home():
-
     for city in range(len(city_names)):
         return '''
         <!DOCTYPE html>
