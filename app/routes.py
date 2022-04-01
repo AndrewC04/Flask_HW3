@@ -11,4 +11,4 @@ def home():
   return render_template('home.html', name=name, cities=city_names)
 
 class LoginForm(FlaskForm):
-    string_city = StringField('City Name', validators=[DataRequired()])
+    city_string = StringField('City Name', validators=[DataRequired()])
