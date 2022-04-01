@@ -1,3 +1,7 @@
+from flask_wtf import FlaskForm
+from wtforms import StringField, PasswordField, BooleanField, SubmitField
+from wtforms.validators import DataRequired
+
 @myapp_obj.route("/")
 
 def home():
@@ -5,3 +9,6 @@ def home():
   city_names = ['Paris','London','Rome','Tahiti']
   
   return render_template('home.html', name=name, cities=city_names)
+
+class LoginForm(FlaskForm):
+    string_city = StringField('City Name', validators=[DataRequired()])
