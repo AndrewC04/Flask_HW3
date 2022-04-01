@@ -1,1 +1,13 @@
-
+<html>
+  <body>
+    <h1> Welcome {{ name.username }}! </h1>
+    <p> <a href="http://www.google.com/"> not google </a> </p>
+    <ul>
+      { % for city in city_names % }
+      <div>
+        <p> {{ city.city_names }} </p>
+      </div>
+      { % endfor % }
+    </ul>
+  </body>
+</html>
